@@ -1,0 +1,23 @@
+import type { Config } from 'tailwindcss'
+
+const config: Config = {
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        'infinity-navy': '#0D1B3E',
+        'infinity-gold': '#C9A227',
+        'infinity-blue': '#1A3A6B',
+      },
+      fontFamily: {
+        sans: ['var(--font-inter)'],
+      },
+    },
+  },
+  plugins: [],
+}
+export default config
